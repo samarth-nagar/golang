@@ -7,9 +7,6 @@ import (
 
 func main() {
 	fmt.Println("hrllo  world")
+	resource.MatixAdd(resource.GenRand3X3Matrix(9), resource.GenRand3X3Matrix(9))
 
-	ans := resource.Add(1, 2)
-	multans := resource.Multiply(1, 2)
-
-	fmt.Println(ans, multans)
 }
