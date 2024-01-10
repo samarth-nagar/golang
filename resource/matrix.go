@@ -13,13 +13,13 @@ func MatixAdd(a [3][3]int, b [3][3]int) ([3][3]int, [3][3]int, [3][3]int) {
 		}
 	}
 	fmt.Println(c)
-	return c, b, c
+	return c, a, b
 }
 func GenRand3X3Matrix(integer int) [3][3]int {
 	var mat [3][3]int
 	for index, value := range mat {
 		for index2 := range value {
-			mat[index][index2] = resource.GenrandInt(integer)
+			mat[index][index2] = resource.GenRandInt(integer)
 		}
 
 	}

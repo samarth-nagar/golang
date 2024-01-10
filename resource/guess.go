@@ -11,7 +11,7 @@ var guess int
 func Check() {
 	var guess int
 	fmt.Printf("guess an number between 1 and 100 :-")
-	ans := resource.GenrandInt(100)
+	ans := resource.GenRandInt(100)
 	for guess != ans {
 		fmt.Scanf("%d", &guess)
 		if guess > ans {

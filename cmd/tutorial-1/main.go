@@ -1,12 +1,13 @@
 package main
 
 import (
-	"alderaan/resource"
 	"fmt"
+	"go-tut/resource"
 )
 
 func main() {
-	fmt.Println("hrllo  world")
-	resource.PercentageChange(resource.generateRandomArray(10))
 
+	fmt.Println("hello  world")
+	ans, b, c := resource.MatixAdd(resource.GenRand3X3Matrix(10), resource.GenRand3X3Matrix(10))
+	fmt.Println(ans, b, c)
 }
